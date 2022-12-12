@@ -18,7 +18,7 @@ refs.form.addEventListener('submit', onFormSubmit);
 refs.form.addEventListener('input', throttle(onTextareaInput, 500));
 
 
-if (localStorage.getItem(KYE_FROM_DATAOBJECT)) {
+if (localStorage.getItem(KEY_OF_DATAOBJECT)) {
   formData = JSON.parse(localStorage.getItem(KEY_OF_DATAOBJECT));
   refs.mail.value = formData.email;
   refs.textarea.value = formData.message;
